@@ -5,7 +5,7 @@ import cv2
 cascPath = "haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
 
-image = cv2.imread("familia.jpg")
+image = cv2.imread("Resources/familia.jpg")
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 faces = faceCascade.detectMultiScale(gray,
